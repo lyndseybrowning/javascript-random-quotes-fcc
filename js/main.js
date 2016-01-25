@@ -23,12 +23,12 @@
     const getRandomQuote = () => {
         let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-        if (randomQuote.quote !== lastQuote) {
-            lastQuote = randomQuote.quote;
-
-            return randomQuote;
+        if(randomQuote === lastQuote) {
+          getRandomQuote();
+        } else {
+          lastQuote = randomQuote.quote;
         }
-        return getRandomQuote();
+        return randomQuote;
     };
 
     const newQuote = () => {
