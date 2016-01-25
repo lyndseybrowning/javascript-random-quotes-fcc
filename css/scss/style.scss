@@ -34,6 +34,10 @@ button {
   &:hover {
     background-color: #FCF5C7;
   }
+  &:focus {
+    outline:0;
+  }
+  
 }
 
 .quote {
