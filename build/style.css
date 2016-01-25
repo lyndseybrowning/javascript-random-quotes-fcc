@@ -31,6 +31,9 @@ button {
 button:hover {
   background-color: #FCF5C7;
 }
+button:focus {
+  outline:0;
+}
 
 .quote {
   width: 50%;
